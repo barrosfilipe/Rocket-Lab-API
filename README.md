@@ -2,7 +2,7 @@
 <p align="center"><img src="https://i.imgur.com/Z62dypG.jpg"></p>
 <p align="center">Image from <b>It's Business Time</b> Rocket Lab Mission</p>
 
-<p align="center"><img src="https://i.imgur.com/I7qwZNB.png"></p>
+<p align="center"><img src="https://i.imgur.com/I7qwZNB.png" width="80"></p>
 
 <h1 align="center">Rocket Lab REST API</h1>
 
