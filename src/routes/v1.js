@@ -11,6 +11,6 @@ v1.get('/', info.index);
 /* Launch routes */
 v1.get('/launches', launches.all);
 v1.get('/launches/latest', launches.latest);
-v1.get('/launches/:id', launches.one);
+v1.get('/launches/:flight_number', launches.one);
 
 module.exports = v1;

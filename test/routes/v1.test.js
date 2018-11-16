@@ -20,6 +20,8 @@ test('It should return project info', async () => {
   });
 });
 
+/* TODO */
+
 test('It should return all launches', async () => {
   const response = await request(app).get('/v1/launches');
   expect(response.statusCode).toBe(200);

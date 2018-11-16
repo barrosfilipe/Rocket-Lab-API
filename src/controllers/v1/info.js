@@ -1,12 +1,11 @@
 module.exports = {
-  index: (req, res) => {
-    res.json({
-      name: 'Rocket-Lab-API',
-      version: '1.0.0',
-      description: 'An Open Source REST API for rocket, pad and launch data',
-      github: 'https://github.com/barrosfilipe/Rocket-Lab-API',
-      author: 'Filipe Barros <filipebarrossi@gmail.com>',
-      license: 'MIT'
-    });
+  index: async (req, res) => {
+    const data = await global.db
+      .collection('info')
+      .find({})
+      .project({ _id: 0 })
+      .toArray();
+
+    res.json(data[0]);
   }
 };

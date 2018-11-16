@@ -84,3 +84,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# MongoDB local files
+.schema.json

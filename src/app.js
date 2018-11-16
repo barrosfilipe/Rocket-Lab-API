@@ -4,7 +4,13 @@ const helmet = require('helmet');
 const compression = require('compression');
 const responseTime = require('response-time');
 const createError = require('http-errors');
+const MongoClient = require('mongodb');
 const app = express();
+
+/* Production read-only mongoDB */
+const url =
+  process.env.MONGO_URL ||
+  'mongodb+srv://public:rocketlab@cluster0-vovr4.gcp.mongodb.net/rocketlab-api';
 
 /* Import routes */
 const routes_v1 = require('./routes/v1');
@@ -29,10 +35,24 @@ app.use((err, req, res, next) => {
   res.json({ error: 'No results found' });
 });
 
-module.exports = app;
+/* MongoDB Connection and Server Initialization */
+(async () => {
+  try {
+    const client = await MongoClient.connect(
+      url,
+      { poolSize: 20, useNewUrlParser: true }
+    );
 
-/* Server listener */
-app.listen(process.env.PORT || 3000, () => {
-  console.log(`Rocket Lab API is Running on Port ${process.env.PORT || 3000}`);
-  app.emit('ready');
-});
+    global.db = client.db('rocketlab-api');
+
+    const port = process.env.PORT || 3000;
+    app.listen(port, () => {
+      app.emit('ready');
+      console.log(`Rocket Lab API is Running on Port ${port}`);
+    });
+  } catch (err) {
+    console.log(err.stack);
+  }
+})();
+
+module.exports = app;
