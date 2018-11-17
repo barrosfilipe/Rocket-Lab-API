@@ -156,3 +156,6 @@ Follow the quick guide [here](https://github.com/barrosfilipe/Rocket-Lab-API/blo
 * I am not affiliated with Rocket Lab in any way, shape, form, or fashion. Just a fun side project for me
 * For any other questions or concerns, just shoot me an email
 * Yes, this project is inspired by [SpaceX-API](https://github.com/r-spacex/SpaceX-API/)
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbarrosfilipe%2FRocket-Lab-API.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbarrosfilipe%2FRocket-Lab-API?ref=badge_large)
