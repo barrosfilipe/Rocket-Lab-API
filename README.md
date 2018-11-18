@@ -33,7 +33,7 @@ curl -s https://rocketlab-api.now.sh/v1/launches/latest | jq
     "name": "Electron",
     "first_stage": { "engines": 9, "type": "Rutherford" },
     "second_stage": { "engines": 1, "type": "Rutherford" },
-    "third_stage": { "engines": 1, "type": "Curie" },
+    "kick_stage": { "engines": 1, "type": "Curie" },
     "payloads": [
       {
         "norad_id": 43693,
