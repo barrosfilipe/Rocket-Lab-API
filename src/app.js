@@ -10,7 +10,7 @@ const app = express();
 /* Production read-only mongoDB */
 const url =
   process.env.MONGO_URL ||
-  'mongodb+srv://public:rocketlab@cluster0-vovr4.gcp.mongodb.net/rocketlab-api';
+  'mongodb+srv://public:rocketlab@rocketlab-zkfvv.gcp.mongodb.net/rocketlab-api';
 
 /* Import routes */
 const routes_v1 = require('./routes/v1');
