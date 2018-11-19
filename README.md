@@ -132,7 +132,11 @@ curl -s https://rocketlab-api.now.sh/v1/launches/latest | jq
     "videos": [
       "https://www.youtube.com/watch?v=sPwMuUxSrcA",
       "https://www.youtube.com/watch?v=MUyJQiWzefQ"
-    ]
+    ],
+    "mission_patch": {
+      "original": "https://images2.imgbox.com/66/d6/IyyvCr2E_o.png",
+      "small": "https://images2.imgbox.com/46/a9/uLbJEKIA_o.png"
+    }
   },
   "details": null
 }
