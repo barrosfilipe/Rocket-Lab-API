@@ -4,6 +4,7 @@ const helmet = require('helmet');
 const compression = require('compression');
 const responseTime = require('response-time');
 const createError = require('http-errors');
+const morgan = require('morgan');
 const MongoClient = require('mongodb');
 const app = express();
 
@@ -14,6 +15,15 @@ const url =
 
 /* Import routes */
 const routes_v1 = require('./routes/v1');
+
+/* App logs */
+if (process.env.NODE_ENV !== 'test') {
+  app.use(
+    morgan(
+      '[:date[clf]] ":method :url HTTP/:http-version :status - :response-time ms"'
+    )
+  );
+}
 
 /* HTTP enhancements */
 app.use(cors());
