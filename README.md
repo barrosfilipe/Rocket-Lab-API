@@ -10,7 +10,7 @@
 <a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=flat"></a>
 </p>
 
-<h3 align="center">An Open Source REST API for rocket, pad and launch data</h3>
+<h3 align="center">An Open Source REST API for rocket and launch data</h3>
 
 ## Usage
 
