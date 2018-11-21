@@ -16,6 +16,9 @@ v1.get('/rockets', rockets.all);
 /* Launch routes */
 v1.get('/launches', launches.all);
 v1.get('/launches/latest', launches.latest);
+v1.get('/launches/past', launches.past);
+v1.get('/launches/next', launches.next);
+v1.get('/launches/upcoming', launches.upcoming);
 v1.get('/launches/:flight_number', launches.one);
 
 /* Payload routes */

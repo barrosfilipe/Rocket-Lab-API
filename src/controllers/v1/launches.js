@@ -36,16 +36,35 @@ module.exports = {
     res.json(data[0]);
   },
 
-  /* TODO */
   upcoming: async (req, res) => {
-    res.json({});
+    const data = await global.db
+      .collection('launches')
+      .find({ upcoming: true })
+      .project({ _id: 0 })
+      .toArray();
+
+    res.json(data);
   },
 
   next: async (req, res) => {
-    res.json({});
+    const data = await global.db
+      .collection('launches')
+      .find({ upcoming: true })
+      .project({ _id: 0 })
+      .sort({ flight_number: -1 })
+      .limit(1)
+      .toArray();
+
+    res.json(data[0]);
   },
 
   past: async (req, res) => {
-    res.json({});
+    const data = await global.db
+      .collection('launches')
+      .find({ upcoming: false })
+      .project({ _id: 0 })
+      .toArray();
+
+    res.json(data);
   }
 };
