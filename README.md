@@ -146,7 +146,7 @@ curl -s https://rocketlab-api.now.sh/v1/launches/latest | jq
 See the [contribution](https://github.com/barrosfilipe/Rocket-Lab-API/blob/master/CONTRIBUTING.md) guide for detailed steps
 
 ## Documentation
-See the `v1 documentation` [here](https://github.com/barrosfilipe/Rocket-Lab-API/blob/master/docs)
+See the `v1 documentation` [here](https://github.com/barrosfilipe/Rocket-Lab-API/blob/master/docs/v1)
 
 ## Local Development
 Follow the quick guide [here](https://github.com/barrosfilipe/Rocket-Lab-API/blob/master/docs/development.md)
