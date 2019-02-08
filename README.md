@@ -22,13 +22,13 @@ curl -s https://rocketlab-api.now.sh/v1/launches/latest | jq
 
 ```json
 {
-  "flight_number": 3,
-  "mission_name": "It's Business Time",
+  "flight_number": 4,
+  "mission_name": "ELaNa 19",
   "upcoming": false,
   "launch_year": "2018",
-  "launch_date_unix": 1541908260,
-  "launch_date_utc": "2018-11-11T03:51:00.000Z",
-  "launch_date_local": "2018-11-11T16:51:00+13:00",
+  "launch_date_unix": 1544941980,
+  "launch_date_utc": "2018-12-16T06:33:00.000Z",
+  "launch_date_local": "2018-12-16T18:33:00.000Z",
   "rocket": {
     "name": "Electron",
     "first_stage": { "engines": 9, "type": "Rutherford" },
@@ -36,80 +36,113 @@ curl -s https://rocketlab-api.now.sh/v1/launches/latest | jq
     "kick_stage": { "engines": 1, "type": "Curie" },
     "payloads": [
       {
-        "norad_id": 43693,
-        "name": "Irvine 01",
+        "norad_id": null,
+        "name": "ALBUS",
         "nationality": "United States",
         "configuration": "CubeSat",
-        "type": ["Educational"],
-        "customer_name": "Irvine Public School Foundation",
-        "manufacturer": "Irvine CubeSat STEM Program",
+        "type": ["Technology"],
+        "customer_name": "NASA",
+        "manufacturer": "NASA Glenn Research Center",
+        "mass_kg": 5,
+        "orbit": "LEO"
+      },
+      {
+        "norad_id": null,
+        "name": "CeREs",
+        "nationality": "United States",
+        "configuration": "CubeSat",
+        "type": ["Magnetospheric Research"],
+        "customer_name": "NASA",
+        "manufacturer": "NASA Goddard Space Flight Center",
+        "mass_kg": 4,
+        "orbit": "LEO"
+      },
+      {
+        "norad_id": 43855,
+        "name": "CHOMPTT",
+        "nationality": "United States",
+        "configuration": "CubeSat",
+        "type": ["Technology"],
+        "customer_name": "NASA",
+        "manufacturer": "University of Florida",
         "mass_kg": 1,
         "orbit": "LEO"
       },
       {
-        "norad_id": 43690,
-        "name": "CICERO 10",
+        "norad_id": null,
+        "name": "CubeSail",
         "nationality": "United States",
         "configuration": "CubeSat",
-        "type": ["Earth observation"],
-        "customer_name": "GeoOptics",
-        "manufacturer": "Tyvak Nano-Satellite Systems",
-        "mass_kg": 10,
+        "type": ["Technology"],
+        "customer_name": "NASA",
+        "manufacturer": "University of Illinois at Urbana-Champaign",
+        "mass_kg": null,
         "orbit": "LEO"
       },
       {
-        "norad_id": null,
-        "name": "NABEO",
-        "nationality": "Germany",
-        "configuration": "CubeSat",
-        "type": ["Technology", "Deployable ADEO-nano drag sail"],
-        "customer_name": "HPS GmbH",
-        "manufacturer": "HPS GmbH",
-        "mass_kg": 1.3,
-        "orbit": "LEO"
-      },
-      {
-        "norad_id": null,
-        "name": "Lemur-2 Zupanski",
+        "norad_id": 43857,
+        "name": "DaVinci",
         "nationality": "United States",
         "configuration": "CubeSat",
-        "type": ["Earth observation", "Traffic monitoring"],
-        "customer_name": "Spire Global",
-        "manufacturer": "Spire Global",
+        "type": ["Technology", "Educational"],
+        "customer_name": "NASA",
+        "manufacturer": "North Idaho STEM Charter Academy",
         "mass_kg": 4,
         "orbit": "LEO"
       },
       {
         "norad_id": null,
-        "name": "Lemur-2 Chanusiak",
+        "name": "ISX",
         "nationality": "United States",
         "configuration": "CubeSat",
-        "type": ["Earth observation", "Traffic monitoring"],
-        "customer_name": "Spire Global",
-        "manufacturer": "Spire Global",
+        "type": ["Techology"],
+        "customer_name": "NASA",
+        "manufacturer": "SRI International/ California Polytechnic University",
         "mass_kg": 4,
         "orbit": "LEO"
       },
       {
         "norad_id": null,
-        "name": "Proxima 1",
+        "name": "NMTSat",
         "nationality": "United States",
         "configuration": "CubeSat",
-        "type": ["Communication", "IoT"],
-        "customer_name": "Fleet Space Technologies",
-        "manufacturer": "Pumpkin Space Systems",
+        "type": ["Technology", "Magnetospheric Research"],
+        "customer_name": "NASA",
+        "manufacturer": "New Mexico Institute of Mining and Technology",
+        "mass_kg": 4,
+        "orbit": "LEO"
+      },
+      {
+        "norad_id": null,
+        "name": "RSat",
+        "nationality": "United States",
+        "configuration": "CubeSat",
+        "type": ["Technology"],
+        "customer_name": "NASA",
+        "manufacturer": "United States Naval Academy",
         "mass_kg": null,
         "orbit": "LEO"
       },
       {
         "norad_id": null,
-        "name": "Proxima 2",
+        "name": "Shields-1",
         "nationality": "United States",
         "configuration": "CubeSat",
-        "type": ["Communication", "IoT"],
-        "customer_name": "Fleet Space Technologies",
-        "manufacturer": "Pumpkin Space Systems",
+        "type": ["Technology"],
+        "customer_name": "NASA",
+        "manufacturer": "NASA Langley Research Center",
         "mass_kg": null,
+        "orbit": "LEO"
+      },
+      {
+        "norad_id": 43852,
+        "name": "STF-1",
+        "nationality": "United States",
+        "configuration": "CubeSat",
+        "type": ["Technology"],
+        "customer_name": "NASA",
+        "manufacturer": "West Virginia University / NASA IV&V",
+        "mass_kg": 4,
         "orbit": "LEO"
       }
     ]
@@ -122,24 +155,22 @@ curl -s https://rocketlab-api.now.sh/v1/launches/latest | jq
   "launch_success": true,
   "links": {
     "articles": [
-      "https://www.rocketlabusa.com/news/updates/its-business-time-at-rocket-lab/",
-      "https://www.rocketlabusa.com/news/updates/rocket-lab-moves-its-business-time-launch-window/",
-      "https://www.rocketlabusa.com/news/updates/rocket-lab-confirms-new-its-business-time-launch-window-and-bolsters-manifest/",
-      "https://www.rocketlabusa.com/news/updates/rocket-lab-to-launch-its-business-time-and-elana-xix-missions-weeks-apart/",
-      "https://www.rocketlabusa.com/news/updates/fleet-space-technologies-joins-rocket-lab-manifest-for-its-business-time-mission/",
-      "https://www.rocketlabusa.com/news/updates/rocket-lab-reaches-orbit-again-deploys-more-satellites/"
+      "https://www.nasa.gov/content/upcoming-elana-cubesat-launches",
+      "https://www.rocketlabusa.com/news/updates/rocket-lab-successfully-launches-nasa-cubesats-to-orbit-on-first-ever-venture-class-launch-services-mission/",
+      "https://www.rocketlabusa.com/assets/Uploads/NASA-ELANA19-Presskit-December2019.pdf"
     ],
     "videos": [
-      "https://www.youtube.com/watch?v=sPwMuUxSrcA",
-      "https://www.youtube.com/watch?v=MUyJQiWzefQ"
+      "https://www.youtube.com/watch?v=CebXCobtIgc",
+      "https://www.youtube.com/watch?v=F7Kr3664hJs"
     ],
     "mission_patch": {
-      "original": "https://images2.imgbox.com/b8/cd/Q0pMwUBz_o.png",
-      "small": "https://images2.imgbox.com/54/d4/STMRNThy_o.png"
+      "original": "https://images2.imgbox.com/a8/ab/IhwIB4WV_o.png",
+      "small": "https://images2.imgbox.com/90/ad/dmLQd3cD_o.png"
     }
   },
-  "details": null
+  "details": "The Launch Services Program (LSP) at NASA's Kennedy Space Center in Florida manages a fun and unique program known as Educational Launch of Nanosatellites or ELaNa. This program enables students in the Science, Technology, Engineering and Mathematics fields to work directly with Nanosatellites and NASA. The students are involved in all aspects of the process from Development to Assembly and testing. CubeSats are small 10x10x10 CM (About 4 Inche Cube) satellites that can do a multitude of tasks  once they are released in space. These ELaNa missions are the first Educational Cargo to be carried on launch vehicles for LSP."
 }
+
 ```
 
 ## Contributions
