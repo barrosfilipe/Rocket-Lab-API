@@ -7,7 +7,7 @@
 <h1 align="center">Rocket Lab REST API</h1>
 
 <p align="center">
-<a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=flat"></a>
+<a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=flat"></a> <a href="https://www.codacy.com/app/filipebarrossi/Rocket-Lab-API?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=barrosfilipe/Rocket-Lab-API&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/010750d5b7cf43909964bc207ed5ea51"/></a>
 </p>
 
 <h3 align="center">An Open Source REST API for rocket and launch data</h3>
