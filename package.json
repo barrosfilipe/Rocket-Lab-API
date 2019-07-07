@@ -28,10 +28,10 @@
     "response-time": "^2.3.2"
   },
   "devDependencies": {
-    "jest": "^23.6.0",
+    "jest": "^24.8.0",
     "nodemon": "^1.18.6",
     "prettier": "^1.15.2",
     "prettierrc": "^0.0.0-5",
-    "supertest": "^3.3.0"
+    "supertest": "^4.0.2"
   }
 }
